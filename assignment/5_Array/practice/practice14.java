@@ -1,4 +1,4 @@
-	public class ArrayPractice {
+public class ArrayPractice {
     public void pracitce14() {
       // 로또 번호 자동 생성기 작성 -> 1 ~ 45의 정수
       // 중복 없이 오름차순으로 정렬하여 출력
