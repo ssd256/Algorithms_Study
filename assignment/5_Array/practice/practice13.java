@@ -1,4 +1,5 @@
-public void pracitce13() {
+public class ArrayPractice {
+	public void pracitce13() {
 		// 10개의 값을 저장할 수 있는 정수형 배열 선언 및 할당
 		// 1~10 사이의 난수(랜덤)를 발생시켜 중복없이 배열에 초기화하여 출력
 		// 1. int[10] 배열에 난수 집어넣기
@@ -23,3 +24,4 @@ public void pracitce13() {
 		}
 		
 	} // practice 13 end
+} // class end
