@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class Main{
+    
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        
+        int A = sc.nextInt();
+        int B = sc.nextInt();
+        
+        String str = A > B ? ">" : (A < B ? "<" : "==");  // 삼항연산자로도 가능 --> str에 안 넣고 바로 출력문에 넣어도 가능
+        System.out.println(str);
+    }
+}
