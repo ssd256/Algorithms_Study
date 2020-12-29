@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);  // 입력받는 수라서 Scanner 사용
+        
+        int A = sc.nextInt();
+        int B = sc.nextInt();
+        
+        if(A>B) System.out.println(">");    // if문이 한줄이면 {} 생략 가능
+        else if(A<B) System.out.println("<");
+        else System.out.println("==");
+    }
+}
+
+
