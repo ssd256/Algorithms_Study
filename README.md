@@ -6,7 +6,6 @@
    
    
    
-***
 #### 2. JavaScript 문법 - w3school
 * **jQuery**로 바꿔보기   
 * **es6문법** 적용해서 미니 프로젝트 만들기
