@@ -7,6 +7,7 @@ public class Main{
         
         int score = sc.nextInt();
         
+        // 방법 1 - if문
         if(score < 0 || score > 100){
            System.out.println("잘못된 점수를 입력하였습니다.");
        }
@@ -25,7 +26,7 @@ public class Main{
 
 
 
-        
+        // 방법 2 - switch문
         int num = score/10;     // 입력받은 점수를 10으로 나눠서 나눈 결과 값을 switch문으로 걸러줌
         
         switch(num){
