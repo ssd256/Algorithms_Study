@@ -5,19 +5,24 @@ class Main {
 		String input = br.readLine();
 		int num = Integer.parseInt(input);
 		
-    // 3,6,9가 포함된 숫자에 박수친 횟수 세기 --> 33, 36일 경우 박수 2번
-    
-		int count = 0;  // 박수 친 횟수
-		for(int i = 1; i < num; i++){ // 내가 입력한 숫자까지 증가하는 i
-			if(input.length() == 1){    // 한 자리 수 입력
-				if(i%3 == 0 || i%6 == 0 || i%9 == 0){
-					count++;
-					//System.out.println(count);
-				}
-// 			} else {    // 두 자리 수 입력 시 : 30번대는 박수 2번 쳐야 되는 경우 발생
-				
-// 			}
-		}
+		// 3,6,9 체크 --> 한 글자씩 체크해야 함
+		int count = 0;	// 박수 횟수
 		
+		// 입력한 숫자까지만 증가해야 되니까 i < num --> i++은 구문 벗어난 후에 증가(주의)
+		for(int i = 1; i < num; i++){
+			// 문자열로 형변환
+			String chkNum = String.valueOf(i);
+			
+			// 형변환 된 문자열 길이만큼 반복 --> 입력한 숫자의 길이
+			for(int j = 0; j < chkNum.length(); j++){
+				
+				// 한 글자씩 chk에 담음
+				char chk = chkNum.charAt(j);						
+				if(chk == '3' || chk == '6' || chk == '9'){
+					count++;
+				}
+			}
+		}
+		System.out.println(count);
 	}
 }
