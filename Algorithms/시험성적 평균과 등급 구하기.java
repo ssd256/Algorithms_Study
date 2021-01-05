@@ -14,7 +14,7 @@ class Main {
 		}
 		
 		avg = (double)sum/size;
-    // 3번째 자리에서 반올림
+    		// 3번째 자리에서 반올림
 		avg = Math.round(avg*100d)/100d;
 		
     // 방법1
@@ -30,19 +30,19 @@ class Main {
 			System.out.printf("%.2f F", avg);
 		}				
     
-    // 평균의 10자리만 비교(내림)
+    		// 평균의 10자리만 비교(내림)
 		int avgVal = (int)Math.floor(avg)/10;
 		
     // 방법2
     // 소수점 2자리까지 출력하는 부분에서 고민했는데 printf로 쉽게 풀림
-		switch(avgVal){
-			case 10:
-			case 9: System.out.printf("%.2f A", avg); break;  
-			case 8: System.out.printf("%.2f B", avg); break;
-			case 7: System.out.printf("%.2f C", avg); break;
-			case 6: System.out.printf("%.2f D", avg); break;
-			default: System.out.printf("%.2f F", avg);
-		}		  
+	switch(avgVal){
+		case 10:
+		case 9: System.out.printf("%.2f A", avg); break;  
+		case 8: System.out.printf("%.2f B", avg); break;
+		case 7: System.out.printf("%.2f C", avg); break;
+		case 6: System.out.printf("%.2f D", avg); break;
+		default: System.out.printf("%.2f F", avg);
+	}		  
         
 	}
 }
